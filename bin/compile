@@ -75,7 +75,7 @@ function install_rails_log_stdout {
     PLUG_DIR=$BUILD_DIR/vendor/plugins/rails_log_stdout
     mkdir -p $PLUG_DIR
     cd $PLUG_DIR
-    curl 'https://github.com/ddollar/rails_log_stdout/tarball/master' -s -o - | tar xzf - 
+    curl -L 'https://github.com/ddollar/rails_log_stdout/tarball/master' -s -o - | tar xzf - 
     cd -
   fi
 }
@@ -85,7 +85,7 @@ function install_rails3_server_static_assets {
     PLUG_DIR=$BUILD_DIR/vendor/plugins/rails3_server_static_assets
     mkdir -p $PLUG_DIR
     cd $PLUG_DIR
-    curl 'https://github.com/pedro/rails3_serve_static_assets/tarball/master' -s -o - | tar xzf - 
+    curl -L 'https://github.com/pedro/rails3_serve_static_assets/tarball/master' -s -o - | tar xzf - 
     cd -
   fi
 }
